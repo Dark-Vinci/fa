@@ -12,7 +12,7 @@ function getRandomColor() {
   const bHex = b.toString(16).padStart(2, '0');
 
   const color = `#${rHex}${gHex}${bHex}`;
-  
+
   return color;
 }
 
@@ -36,9 +36,8 @@ export default function App() {
       alignItems: 'center',
       justifyContent: 'center',
     }}>
-      <Text style={{color: "white"}}>Background color { color }</Text>
+      <Text style={{color: "white"}}>Background color { color } Tomiwa and Beccy</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
-
