@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, JSX } from 'react';
 import { Text, View } from 'react-native';
 
 function getRandomColor() {
@@ -16,7 +16,7 @@ function getRandomColor() {
   return color;
 }
 
-export default function App() {
+export default function App(): JSX.Element {
   const [color, setColor] = useState(getRandomColor());
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function App() {
       alignItems: 'center',
       justifyContent: 'center',
     }}>
-      <Text style={{color: "white"}}>Background color { color } Tomiwa and Beccy</Text>
+      <Text style={{color: "white"}}>Background | running color { color } Tomiwa and Beccy</Text>
       <StatusBar style="auto" />
     </View>
   );
